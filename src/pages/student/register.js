@@ -85,8 +85,8 @@ class App extends React.Component {
                 console.log(error);
                 Swal.fire({
                     icon: 'error',
-                    title: 'Internal Server Error!',
-                    text: 'Please Try again in a moment or Contact Administrator!',
+                    title: 'You are Unautherized!',
+                    text: 'Please Check your Credentials and Try Again!',
                 })
             });
     };
@@ -269,7 +269,7 @@ class App extends React.Component {
                                 <div className={this.state.details}>
                                     {/* <img className="img-fluid mb-4" width="300" src="https://connix.institute.org.in/assets/images/student-login-2.svg" alt="" style={{ transform: "rotate(10deg)" }} /> */}
                                     <h1 className="mb-4">Research Project Management<br className="d-none d-lg-inline" />SLIIT</h1>
-                                    <p className="lead text-muted">Make your project Team easily with get the pre-aproval from your Lecture in Charge on few clicks!</p>
+                                    <p className="lead text-muted">Make your project Team easily with get the pre-approval from your Lecture in Charge on few clicks!</p>
                                 </div>
                             </div>
                         </div>
