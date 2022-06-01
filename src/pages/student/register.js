@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Swal from 'sweetalert2';
 import axios from 'axios';
 require('dotenv').config();
+import { authenticate } from '../../services/SessionManager';
+
 
 class App extends React.Component {
     //set the state default value
@@ -79,13 +81,14 @@ class App extends React.Component {
                         sliitEmail: "",
                         password: "",
                     });
+                    authenticate(response, () => (window.location.href = `/stuednt`), 2000);
                 }
             })
             .catch(error => {
                 console.log(error);
                 Swal.fire({
                     icon: 'error',
-                    title: 'You are Unautherized!',
+                    title: 'Internal Server Error!',
                     text: 'Please Check your Credentials and Try Again!',
                 })
             });
@@ -111,7 +114,7 @@ class App extends React.Component {
         var studentType = newUser.studentType;
         var groupStatus = newUser.groupStatus;
 
-        axios.post(`${process.env.BACKEND_API_AZURE}/student/`, {
+        axios.post(`${process.env.BACKEND_API_AZURE} / student / `, {
             fullName,
             sliitId,
             sliitEmail,
@@ -279,4 +282,5 @@ class App extends React.Component {
         )
     };
 }
+
 export default App;
