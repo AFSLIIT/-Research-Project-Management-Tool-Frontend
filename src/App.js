@@ -12,6 +12,9 @@ import FileUpload from './components/Admin/fileUpload';
 // Stuednt Route
 import Register from './pages/student/register';
 import StudentDashboard from './pages/student/dashboard';
+import Header from './components/student/Navbar';
+import Group from './pages/student/project-group/index';
+import GroupRegister from './pages/student/project-group/groupRegister';
 
 function App() {
   return (
@@ -20,13 +23,17 @@ function App() {
         <Routes>
           {/* Public Route */}
           <Route path="/" element={<Register />} />
-          <Route path="/stuednt" element={<StudentDashboard />} />
+          <Route path="/student" element={<StudentDashboard />} />
+          <Route path="/header" element={<Header />} />
+          <Route path="/group" element={<Group />} />
+          <Route path="/group-register" element={<GroupRegister />} />
+
           <Route path="/admin/register" element={<AdminRegister />} />
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
           <Route path="/admin/login" element={<AdminLogin />} />
-          <Route path="/admin/home" element={<SideMenu/>}/>
-          <Route path='/subTypes' element={<AddSubTypes/>}/>
-          <Route path='/fileUpload' element={<FileUpload/>}/>
+          <Route path="/admin/home" element={<SideMenu />} />
+          <Route path='/subTypes' element={<AddSubTypes />} />
+          <Route path='/fileUpload' element={<FileUpload />} />
         </Routes>
       </Router>
     </>

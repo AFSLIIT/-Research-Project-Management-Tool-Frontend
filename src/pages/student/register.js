@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../assets/student/student.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import '../../assets/student/student.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import Swal from 'sweetalert2';
 import axios from 'axios';
 require('dotenv').config();
@@ -81,7 +81,7 @@ class App extends React.Component {
                         sliitEmail: "",
                         password: "",
                     });
-                    authenticate(response, () => (window.location.href = `/stuednt`), 2000);
+                    authenticate(response, () => (window.location.href = `/student`), 2000);
                 }
             })
             .catch(error => {
@@ -114,7 +114,7 @@ class App extends React.Component {
         var studentType = newUser.studentType;
         var groupStatus = newUser.groupStatus;
 
-        axios.post(`${process.env.BACKEND_API_AZURE} / student / `, {
+        axios.post(`${process.env.BACKEND_API_AZURE}/student/`, {
             fullName,
             sliitId,
             sliitEmail,
@@ -144,7 +144,7 @@ class App extends React.Component {
                 console.log(error);
                 Swal.fire({
                     icon: 'error',
-                    title: 'Error! Something went wrong!',
+                    title: 'Error! Student Email Address is already in use!',
                     text: 'Please Try Again!',
                 })
             });
@@ -166,7 +166,7 @@ class App extends React.Component {
     render() {
 
         return (
-            <div className="App">
+            <div className="App ">
 
                 {/*} login {*/}
                 <div className="page-holder align-items-center py-4 bg-gray-100 vh-100">
