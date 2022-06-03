@@ -115,7 +115,7 @@ const App = () => {
             })
             .catch(error => {
                 console.log(error);
-                // alert("Error Fetching Staff Members")
+                // alert("Error Fetching Student Details")
             });
 
 
