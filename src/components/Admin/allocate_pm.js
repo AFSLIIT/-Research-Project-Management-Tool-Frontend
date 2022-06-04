@@ -9,6 +9,7 @@ import "../../assets/subTypes/subtypee.css";
 import Sidebar from "../../pages/admin/Sidebar";
 import Navbar from "../../pages/admin/Navbar";
 import { Item } from "semantic-ui-react";
+const EmailAddressMask = /^\S*@?\S*$/
 export default class allocate_pm extends Component {
   constructor(props) {
     super(props);

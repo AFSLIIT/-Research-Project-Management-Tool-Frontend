@@ -37,7 +37,7 @@ export default class pmTableRow extends Component {
         <td>
           <a
             className="btn btn-warning text-decoration-none text-white"
-            to={"/update-pm/" + this.props.obj.id}
+            href={"/update-pm/" + this.props.obj._id}
           >
             <i className="fas fa-edit"></i>&nbsp;Edit
           </a>

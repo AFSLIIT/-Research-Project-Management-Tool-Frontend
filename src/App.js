@@ -17,6 +17,8 @@ import EditSubType from "./components/Admin/update_subtype";
 import PanelMember from "./components/Admin/allocate_pm";
 import Pmlist from "./components/Admin/list_panelmem";
 import UpdateAdmin from "./pages/admin/updateAdmin";
+import EditPm from "./components/Admin/update_pm";
+import MarkinScm from "./components/Admin/createMarkinsc";
 
 // Stuednt Route
 import Register from "./pages/student/register";
@@ -71,11 +73,14 @@ function App() {
             <Route path="/admin/pmlist" element={<Pmlist />} />
             <Route path="/admin-update" element={<UpdateAdmin />} />
             <Route path="/staff/profile/update/:id" element={<UpdateStaff />} />
+            <Route path="/update-pm/:id" element={<EditPm />} />
           </Route>
 
           {/* Public Route */}
           <Route path="/register" element={<Register />} />
           <Route path="/admin/login" element={<AdminLogin />} />
+          <Route path="/admin/marking" element={<MarkinScm />} />
+
         </Routes>
       </Router>
     </>
