@@ -80,7 +80,7 @@ class Dashboard extends Component {
         <Navbar />
         <Sidebar />
         <div className="container ">
-          <h2>Registered Staff Users</h2>
+          <h2>Registered Staff Members</h2>
           <br />
           <p>
             <button className="btn btn-primary">
