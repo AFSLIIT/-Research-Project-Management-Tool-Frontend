@@ -135,7 +135,7 @@ class Dashboard extends Component {
                   <td>
                     <a
                       className="text-decoration-none"
-                      href={`/staff/profile/view/${profiles._id}`}
+                      // href={`/staff/profile/view/${profiles._id}`}
                       style={{ textDecoration: "none" }}
                     >
                       {profiles.fName}
