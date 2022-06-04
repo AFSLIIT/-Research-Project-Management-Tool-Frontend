@@ -73,7 +73,7 @@ function Register() {
       <div>
         <div className="card" style={{ marginLeft: "80px" }}>
           <div className="card-header px-lg-5">
-            <h3 className="mb-4">Staff Registeration</h3>
+            <h3 className="mb-4">Staff Registration</h3>
             <p className="text-muted text-sm mb-5">
               Please fill your personal detail to create a staff account.
             </p>
