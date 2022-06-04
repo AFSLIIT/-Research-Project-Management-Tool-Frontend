@@ -17,6 +17,10 @@ import EditSubType from "./components/Admin/update_subtype";
 import PanelMember from "./components/Admin/allocate_pm";
 import Pmlist from "./components/Admin/list_panelmem";
 import UpdateAdmin from "./pages/admin/updateAdmin";
+import TopicApproval from "./pages/Supervisor/topicApproval";
+import ViewGroups from "./pages/Supervisor/viewGroups";
+import ViewDetails from "./pages/Supervisor/viewDetails";
+import ViewChat from "./pages/Supervisor/viewchat"
 
 // Stuednt Route
 import Register from "./pages/student/register";
@@ -71,6 +75,12 @@ function App() {
             <Route path="/admin/pmlist" element={<Pmlist />} />
             <Route path="/admin-update" element={<UpdateAdmin />} />
             <Route path="/staff/profile/update/:id" element={<UpdateStaff />} />
+            <Route
+              path="/supervisor/topicApproval"
+              element={<TopicApproval />}
+            />
+            <Route path="/viewGroup/:id" element={<ViewDetails />} />
+            <Route path="/supervisor/viewChats" element={<ViewChat />} />
           </Route>
 
           {/* Public Route */}
