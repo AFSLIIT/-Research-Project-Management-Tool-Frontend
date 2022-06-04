@@ -91,7 +91,7 @@ const App = () => {
         });
 
         axios
-            .post(`${process.env.BACKEND_API_AZURE}/group/`, {
+            .post(`${process.env.BACKEND_API_LOCAL}/group/`, {
                 groupName,
                 groupLeader,
                 firstMember,
@@ -171,7 +171,7 @@ const App = () => {
 
     }
 
-    
+
 
     useEffect(() => {
         fetchStudents();
