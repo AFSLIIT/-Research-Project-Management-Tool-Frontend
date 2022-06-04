@@ -146,6 +146,17 @@ const Sidebar = () => {
             <NavLink
               className="text-decoration-none text-white"
               exact
+              to="/supervisor/topicApproval"
+              activeClassName="activeClicked"
+            >
+              <CDBSidebarMenuItem icon="th-large">
+                Topic Approvals
+              </CDBSidebarMenuItem>
+            </NavLink>
+
+            <NavLink
+              className="text-decoration-none text-white"
+              exact
               to="#"
               activeClassName="activeClicked"
             >
