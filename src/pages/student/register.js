@@ -114,7 +114,7 @@ class App extends React.Component {
         var studentType = newUser.studentType;
         var groupStatus = newUser.groupStatus;
 
-        axios.post(`${process.env.BACKEND_API_AZURE}/student/`, {
+        axios.post(`${process.env.BACKEND_API_LOCAL}/student/`, {
             fullName,
             sliitId,
             sliitEmail,
